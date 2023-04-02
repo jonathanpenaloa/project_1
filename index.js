@@ -81,10 +81,17 @@ const returnIsChase = (name) => {
 console.log("#7", returnIsChase('ChaSe'));
 
 // 8. Make a variable called class that is an array ["Sally", "Sam", "Frodo", "Gandalf", "Eragorn", "Gimley"]
-
-
-
+let classNames = ["Sally", "Sam", "Frodo", "Gandalf", "Eragorn", "Gimley", "gs", "nd", "jsa", "fhd", "ahd"];
 // Write a function called returnClassIsTooSmall that will return true if the students parameter has less than 10 students
+const returnClasIsTooSmall = (classeSize) => {
+    return classeSize.length < 10 ? true : "this is a large class";
+}
+
+console.log("#8", returnClasIsTooSmall(classNames));
+
+
+
+
 // 9. Make a variable called combineStrings that will take stringOne parameter and stringTwo parameter and return them combined
 // call this function 3 times with 6 strings.
 // 10. Write a function called returnDataType that will return the datatype of the data parameter
