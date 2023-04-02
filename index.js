@@ -55,16 +55,37 @@ console.log("#5", results5);
 
 
 // 6. Make a variable called count.
-
+let count;
 // Write a function called addToCount that will add the number parameter to the count variable.
 // Call addToCount 4 times with different numbers
+const addToCount = (addToNum) => {
+ count = addToNum;
+ return addToNum++;
+}
+
+count = addToCount(2);
+console.log(count);
+count = addToCount(3);
+console.log(count);
+count = addToCount(5);
+console.log(count);
+count = addToCount(10);
+console.log(count);
+
+
+
 // 7. Write a function called returnIsChase that will return true if the name parameter is "Chase" - Make case insensitive "Chase" "CHASE" "CHasE" all return true
+const returnIsChase = (name) => {
+    return name.toLowerCase() === "chase" ?  true : "Not Chase";
+}
+console.log("#7", returnIsChase('ChaSe'));
 
 // 8. Make a variable called class that is an array ["Sally", "Sam", "Frodo", "Gandalf", "Eragorn", "Gimley"]
 
+
+
 // Write a function called returnClassIsTooSmall that will return true if the students parameter has less than 10 students
 // 9. Make a variable called combineStrings that will take stringOne parameter and stringTwo parameter and return them combined
-
 // call this function 3 times with 6 strings.
 // 10. Write a function called returnDataType that will return the datatype of the data parameter
 
