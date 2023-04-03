@@ -43,15 +43,17 @@ const returnIsBreakingLaw = (age, vevarage) => {
     vevarage.toLowerCase();
     // let conatainAlcohol = ["alcohol", "beer", "wine"];
     // return age < 21 && vevarage === "alcohol" ?  false : true;
-    if (age < 21 || vevarage === "alcohol") {
+    if (age < 21 && vevarage === "alcohol") {
         return true;
     } else {
         return "Cheers!";
     }
 }
 
-let results5 = returnIsBreakingLaw(20, "Alcohol");
+let results5 = returnIsBreakingLaw(20, "soda");
 console.log("#5", results5);
+let results12332 = returnIsBreakingLaw(21, "alcohol");
+console.log("#5", results12332);
 
 
 // 6. Make a variable called count.
