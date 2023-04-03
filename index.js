@@ -133,16 +133,16 @@ let extraStudents = ["Tiffany", "Erika", "Nick", "Chase", "Edgar", "Jonathan", "
 // Write a function called fillClass that will loop until the class array has >= 15 students. 
 // Every loop one student should be put into the class array and taken out of the extraStudents array
 const fillClass = (extraStudents) => {
-    let limetClassZise;
-    for(let i=0; classNames.length < 10; i++) {
-        if(classNames.length < 10) {
-            extraStudents.forEach(name => {
-                limetClassZise = classNames.push(name);
-            });
-            return limetClassZise;
-        }
+
+    console.log(classNames.length);
+    while(classNames.length < 15) {
+        console.log("start loop", classNames.length);
+        let ex =extraStudents.pop()
+        classNames.push(ex);
+        console.log("After loop",classNames.length);
+            }
+        return classNames;
     }
-}
 
 // combined = classNames.concat(extraStudents);
     // done = combined.filter(size => size.length > 5);
